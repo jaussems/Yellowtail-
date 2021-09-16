@@ -15,8 +15,8 @@ export default function MemberPage() {
   }, []);
   console.log(sports);
 
-  const filtered = sports.filter((element) => element.id === 1);
-  console.log(filtered.map((fetch) => fetch.name));
+  // const filtered = sports.filter((element) => element.id === 1);
+  // console.log(filtered.map((fetch) => fetch.name));
   // displayMembers?.sports?.forEach(
   //   (element) => sports[element].name
 
@@ -40,11 +40,11 @@ export default function MemberPage() {
                   name={displayMembers.name}
                   src={displayMembers.image}
                   membersports={
-                    //displayMembers.sports
+                    displayMembers.sports
 
-                    sports
-                      .filter((element) => element.id === 1)
-                      .map((sport) => sport.name)
+                    // sports
+                    //   .filter((element) => element.id === 1)
+                    //   .map((sport) => sport.name)
                   }
                   id={displayMembers.id}
                 />
